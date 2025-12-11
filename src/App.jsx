@@ -17,7 +17,7 @@ function App() {
   const [modalOpened, setModalOpened] = useState(false);
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch(`${import.meta.env.BASE_URL}db.json`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
