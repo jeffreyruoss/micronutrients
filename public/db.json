@@ -46,7 +46,7 @@
     "id": "Vitamin C",
     "name": "Vitamin C (Ascorbic Acid)",
     "rda": "75-90 mg",
-    "storage": "1 month",
+    "storage": "1-3 months",
     "toxicity": "moderate",
     "essential": "essential",
     "ul": "2000 mg"
@@ -71,7 +71,7 @@
   },
   {
     "id": "Vitamin K",
-    "name": "Vitamin K",
+    "name": "Vitamin K (Phylloquinone)",
     "rda": "90-120 mcg",
     "storage": "weeks-months",
     "toxicity": "low",
@@ -80,7 +80,7 @@
   },
   {
     "id": "Potassium",
-    "name": "Potassium",
+    "name": "Potassium (K)",
     "rda": "2600-3400 mg",
     "storage": "days-weeks",
     "toxicity": "high",
@@ -88,7 +88,7 @@
   },
   {
     "id": "Sodium",
-    "name": "Sodium",
+    "name": "Sodium (Na)",
     "rda": "1500 mg",
     "storage": "days-weeks",
     "toxicity": "moderate",
@@ -97,7 +97,7 @@
   },
   {
     "id": "Chromium",
-    "name": "Chromium",
+    "name": "Chromium (Cr)",
     "rda": "20-35 mcg",
     "storage": "days-weeks",
     "toxicity": "low",
@@ -107,7 +107,7 @@
     "id": "Vitamin A",
     "name": "Vitamin A (Retinol)",
     "rda": "700-900 mcg",
-    "storage": "months-1 year",
+    "storage": "1-2 years",
     "toxicity": "very_high",
     "essential": "essential",
     "ul": "3000 mcg"
@@ -116,7 +116,7 @@
     "id": "Vitamin D",
     "name": "Vitamin D (Cholecalciferol)",
     "rda": "600-800 IU",
-    "storage": "2-3 months",
+    "storage": "2-4 months",
     "toxicity": "high",
     "essential": "semi-essential*",
     "ul": "4000 IU",
@@ -126,7 +126,7 @@
     "id": "B12",
     "name": "B12 (Cobalamin)",
     "rda": "2.4 mcg",
-    "storage": "3-5 YEARS",
+    "storage": "2-5 years",
     "toxicity": "low",
     "essential": "essential"
   },
@@ -143,7 +143,7 @@
     "id": "Copper",
     "name": "Copper (Cu)",
     "rda": "900 mcg",
-    "storage": "months",
+    "storage": "weeks",
     "toxicity": "high",
     "essential": "essential",
     "ul": "10 mg"
@@ -161,7 +161,7 @@
     "id": "Zinc",
     "name": "Zinc (Zn)",
     "rda": "8-11 mg",
-    "storage": "weeks-months",
+    "storage": "weeks",
     "toxicity": "high",
     "essential": "essential",
     "ul": "40 mg"
@@ -188,7 +188,7 @@
     "id": "Manganese",
     "name": "Manganese (Mn)",
     "rda": "1.6-2.3 mg",
-    "storage": "weeks-months",
+    "storage": "years (bones)",
     "toxicity": "moderate",
     "essential": "essential",
     "ul": "11 mg"
@@ -206,7 +206,7 @@
     "id": "Phosphorus",
     "name": "Phosphorus (P)",
     "rda": "700 mg",
-    "storage": "years",
+    "storage": "years (bones)",
     "toxicity": "low",
     "essential": "essential"
   },
@@ -214,7 +214,7 @@
     "id": "Vitamin E",
     "name": "Vitamin E (Tocopherol)",
     "rda": "15 mg",
-    "storage": "months-years",
+    "storage": "months (fat/liver)",
     "toxicity": "high",
     "essential": "essential",
     "ul": "1000 mg"
@@ -223,7 +223,7 @@
     "id": "Molybdenum",
     "name": "Molybdenum (Mo)",
     "rda": "45 mcg",
-    "storage": "days-weeks",
+    "storage": "weeks (liver/kidney)",
     "toxicity": "low",
     "essential": "essential",
     "ul": "2000 mcg"
@@ -232,7 +232,7 @@
     "id": "Choline",
     "name": "Choline",
     "rda": "425-550 mg",
-    "storage": "days-weeks",
+    "storage": "weeks (liver)",
     "toxicity": "high",
     "essential": "essential",
     "ul": "3500 mg"
@@ -241,7 +241,7 @@
     "id": "Chloride",
     "name": "Chloride (Cl)",
     "rda": "2300 mg",
-    "storage": "days-weeks",
+    "storage": "weeks (fluids)",
     "toxicity": "moderate",
     "essential": "essential",
     "ul": "3600 mg"

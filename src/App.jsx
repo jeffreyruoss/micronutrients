@@ -1,11 +1,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Container, Paper, Stack, LoadingOverlay, Button, Alert, Modal, Title, Text, List, ThemeIcon, Group } from '@mantine/core';
-import { IconDownload, IconAlertCircle, IconCheck } from '@tabler/icons-react';
+import { IconDownload, IconAlertCircle, IconCheck, IconMail } from '@tabler/icons-react';
 import { jsPDF } from 'jspdf';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { NutrientTable } from './components/NutrientTable';
 import { NutrientModal } from './components/NutrientModal';
+import { Footer } from './components/Footer';
+import { ContactForm } from './components/ContactForm';
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,6 +21,7 @@ function App() {
   
   const [selectedNutrient, setSelectedNutrient] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
 
   const [disclaimerModalOpen, setDisclaimerModalOpen] = useState(() => localStorage.getItem('disclaimerAcknowledged') !== 'true');
   const [disclaimerAcknowledged, setDisclaimerAcknowledged] = useState(() => localStorage.getItem('disclaimerAcknowledged') === 'true');
@@ -228,6 +231,17 @@ function App() {
                    
                 </Group>
             </Stack>
+        </Modal>
+
+        <Footer onContactClick={() => setContactModalOpen(true)} />
+
+        <Modal
+          opened={contactModalOpen}
+          onClose={() => setContactModalOpen(false)}
+          title={<Title order={2} size="h3" c="salad-green.9">Contact Us</Title>}
+          size="lg"
+        >
+          <ContactForm />
         </Modal>
     </Container>
   );

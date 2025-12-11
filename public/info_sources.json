@@ -5,5 +5,144 @@
       { "title": "MedlinePlus - Thiamin", "url": "https://medlineplus.gov/ency/article/002401.htm" },
       { "title": "Mayo Clinic - Thiamin", "url": "https://www.mayoclinic.org/drugs-supplements-thiamin/art-20361878" },
       { "title": "Cleveland Clinic - Thiamin", "url": "https://my.clevelandclinic.org/health/drugs/20888-thiamine-vitamin-b1" }
+    ],
+    "B2": [
+      { "title": "NIH Office of Dietary Supplements - Riboflavin", "url": "https://ods.od.nih.gov/factsheets/Riboflavin-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Riboflavin", "url": "https://www.hsph.harvard.edu/nutritionsource/riboflavin-vitamin-b2/" },
+      { "title": "Mayo Clinic - Riboflavin (Oral Route)", "url": "https://www.mayoclinic.org/drugs-supplements/riboflavin-oral-route/description/drg-20065645" },
+      { "title": "Mt. Sinai - Vitamin B2 (Riboflavin)", "url": "https://www.mountsinai.org/health-library/supplement/vitamin-b2-riboflavin" }
+    ],
+    "B12": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin B12", "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin B12", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-b12/" },
+      { "title": "Mayo Clinic - Vitamin B12", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663" },
+      { "title": "Cleveland Clinic - Vitamin B12 Deficiency", "url": "https://my.clevelandclinic.org/health/diseases/22831-vitamin-b12-deficiency" }
+    ],
+    "B3": [
+      { "title": "NIH Office of Dietary Supplements - Niacin", "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Niacin", "url": "https://www.hsph.harvard.edu/nutritionsource/niacin-vitamin-b3/" },
+      { "title": "Mayo Clinic - Niacin", "url": "https://www.mayoclinic.org/drugs-supplements-niacin/art-20364984" },
+      { "title": "Cleveland Clinic - Niacin (Vitamin B3)", "url": "https://my.clevelandclinic.org/health/drugs/21992-niacin" }
+    ],
+    "B5": [
+      { "title": "NIH Office of Dietary Supplements - Pantothenic Acid", "url": "https://ods.od.nih.gov/factsheets/PantothenicAcid-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Pantothenic Acid", "url": "https://www.hsph.harvard.edu/nutritionsource/pantothenic-acid-vitamin-b5/" },
+      { "title": "Mount Sinai - Vitamin B5 (Pantothenic Acid)", "url": "https://www.mountsinai.org/health-library/supplement/vitamin-b5-pantothenic-acid" }
+    ],
+    "B7": [
+      { "title": "NIH Office of Dietary Supplements - Biotin", "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Biotin", "url": "https://www.hsph.harvard.edu/nutritionsource/biotin-vitamin-b7/" },
+      { "title": "Mayo Clinic - Biotin", "url": "https://www.mayoclinic.org/drugs-supplements-biotin-oral-route/description/drg-20062359" }
+    ],
+    "Vitamin C": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin C", "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin C", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-c/" },
+      { "title": "Mayo Clinic - Vitamin C", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-c/art-20363932" }
+    ],
+
+    "B6": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin B6", "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin B6", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-b6/" },
+      { "title": "Mayo Clinic - Vitamin B6", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-b6/art-20363468" }
+    ],
+    "B9": [
+      { "title": "NIH Office of Dietary Supplements - Folate", "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Folate", "url": "https://www.hsph.harvard.edu/nutritionsource/folic-acid/" },
+      { "title": "Mayo Clinic - Folate (Folic Acid)", "url": "https://www.mayoclinic.org/drugs-supplements-folate/art-20364625" }
+    ],
+    "Vitamin K": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin K", "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin K", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-k/" },
+      { "title": "Cleveland Clinic - Vitamin K", "url": "https://my.clevelandclinic.org/health/articles/21573-vitamin-k" }
+    ],
+    "Potassium": [
+      { "title": "NIH Office of Dietary Supplements - Potassium", "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Potassium", "url": "https://www.hsph.harvard.edu/nutritionsource/potassium/" },
+      { "title": "Mayo Clinic - Potassium", "url": "https://www.mayoclinic.org/drugs-supplements-potassium-supplement-oral-route-parenteral-route/description/drg-20070753" }
+    ],
+    "Sodium": [
+      { "title": "CDC - Sodium", "url": "https://www.cdc.gov/salt/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Salt and Sodium", "url": "https://www.hsph.harvard.edu/nutritionsource/salt-and-sodium/" },
+      { "title": "FDA - Sodium in Your Diet", "url": "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet" }
+    ],
+    "Chromium": [
+      { "title": "NIH Office of Dietary Supplements - Chromium", "url": "https://ods.od.nih.gov/factsheets/Chromium-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Chromium", "url": "https://www.hsph.harvard.edu/nutritionsource/chromium/" },
+      { "title": "Mount Sinai - Chromium", "url": "https://www.mountsinai.org/health-library/supplement/chromium" }
+    ],
+    "Vitamin A": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin A", "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin A", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-a/" },
+      { "title": "Mayo Clinic - Vitamin A", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-a/art-20365945" }
+    ],
+    "Vitamin D": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin D", "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin D", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-d/" },
+      { "title": "Mayo Clinic - Vitamin D", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792" }
+    ],
+    "Iron": [
+      { "title": "NIH Office of Dietary Supplements - Iron", "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Iron", "url": "https://www.hsph.harvard.edu/nutritionsource/iron/" },
+      { "title": "Mayo Clinic - Iron", "url": "https://www.mayoclinic.org/drugs-supplements-iron-supplement-oral-route-parenteral-route/description/drg-20070148" }
+    ],
+    "Copper": [
+      { "title": "NIH Office of Dietary Supplements - Copper", "url": "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Copper", "url": "https://www.hsph.harvard.edu/nutritionsource/copper/" },
+      { "title": "Mount Sinai - Copper", "url": "https://www.mountsinai.org/health-library/supplement/copper" }
+    ],
+    "Magnesium": [
+      { "title": "NIH Office of Dietary Supplements - Magnesium", "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Magnesium", "url": "https://www.hsph.harvard.edu/nutritionsource/magnesium/" },
+      { "title": "Mayo Clinic - Magnesium", "url": "https://www.mayoclinic.org/drugs-supplements-magnesium-supplement-oral-route-parenteral-route/description/drg-20070730" }
+    ],
+    "Zinc": [
+      { "title": "NIH Office of Dietary Supplements - Zinc", "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Zinc", "url": "https://www.hsph.harvard.edu/nutritionsource/zinc/" },
+      { "title": "Mayo Clinic - Zinc", "url": "https://www.mayoclinic.org/drugs-supplements-zinc/art-20366112" }
+    ],
+    "Selenium": [
+      { "title": "NIH Office of Dietary Supplements - Selenium", "url": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Selenium", "url": "https://www.hsph.harvard.edu/nutritionsource/selenium/" },
+      { "title": "Mount Sinai - Selenium", "url": "https://www.mountsinai.org/health-library/supplement/selenium" }
+    ],
+    "Iodine": [
+      { "title": "NIH Office of Dietary Supplements - Iodine", "url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Iodine", "url": "https://www.hsph.harvard.edu/nutritionsource/iodine/" },
+      { "title": "Mayo Clinic - Iodine", "url": "https://www.mayoclinic.org/drugs-supplements-iodine-supplement-oral-route-parenteral-route/description/drg-20064282" }
+    ],
+    "Manganese": [
+      { "title": "NIH Office of Dietary Supplements - Manganese", "url": "https://ods.od.nih.gov/factsheets/Manganese-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Manganese", "url": "https://www.hsph.harvard.edu/nutritionsource/manganese/" },
+      { "title": "Mount Sinai - Manganese", "url": "https://www.mountsinai.org/health-library/supplement/manganese" }
+    ],
+    "Calcium": [
+      { "title": "NIH Office of Dietary Supplements - Calcium", "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Calcium", "url": "https://www.hsph.harvard.edu/nutritionsource/calcium/" },
+      { "title": "Mayo Clinic - Calcium", "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/calcium-supplements/art-20047097" }
+    ],
+    "Phosphorus": [
+      { "title": "NIH Office of Dietary Supplements - Phosphorus", "url": "https://ods.od.nih.gov/factsheets/Phosphorus-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Phosphorus", "url": "https://www.hsph.harvard.edu/nutritionsource/phosphorus/" },
+      { "title": "Mayo Clinic - Phosphorus", "url": "https://www.mayoclinic.org/drugs-supplements-phosphorus-supplement-oral-route-parenteral-route/description/drg-20070562" }
+    ],
+    "Vitamin E": [
+      { "title": "NIH Office of Dietary Supplements - Vitamin E", "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Vitamin E", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-e/" },
+      { "title": "Mayo Clinic - Vitamin E", "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-e/art-20364144" }
+    ],
+    "Molybdenum": [
+      { "title": "NIH Office of Dietary Supplements - Molybdenum", "url": "https://ods.od.nih.gov/factsheets/Molybdenum-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Molybdenum", "url": "https://www.hsph.harvard.edu/nutritionsource/molybdenum/" },
+      { "title": "Mount Sinai - Molybdenum", "url": "https://www.mountsinai.org/health-library/supplement/molybdenum" }
+    ],
+    "Choline": [
+      { "title": "NIH Office of Dietary Supplements - Choline", "url": "https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Choline", "url": "https://www.hsph.harvard.edu/nutritionsource/choline/" },
+      { "title": "Cleveland Clinic - Choline", "url": "https://my.clevelandclinic.org/health/drugs/22202-choline" }
+    ],
+    "Chloride": [
+      { "title": "Harvard T.H. Chan School of Public Health - Chloride", "url": "https://www.hsph.harvard.edu/nutritionsource/chloride/" },
+      { "title": "MedlinePlus - Chloride in Diet", "url": "https://medlineplus.gov/ency/article/002417.htm" },
+      { "title": "NIH National Library of Medicine - Chloride", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Chloride" }
     ]
 }
