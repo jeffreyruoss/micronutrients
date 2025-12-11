@@ -23,5 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Old app
-micronutrients-old-app.html
+TODO.md
