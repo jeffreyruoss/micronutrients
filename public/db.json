@@ -1,0 +1,263 @@
+[
+  {
+    "id": "B1",
+    "name": "B1 (Thiamine)",
+    "tier": "tier_1_daily",
+    "rda": "1.1-1.2 mg",
+    "storage": "9-18 days",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "B2",
+    "name": "B2 (Riboflavin)",
+    "tier": "tier_1_daily",
+    "rda": "1.1-1.3 mg",
+    "storage": "2-6 weeks",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "B3",
+    "name": "B3 (Niacin)",
+    "tier": "tier_1_daily",
+    "rda": "14-16 mg",
+    "storage": "hours",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "35 mg"
+  },
+  {
+    "id": "B5",
+    "name": "B5 (Pantothenic Acid)",
+    "tier": "tier_1_daily",
+    "rda": "5 mg",
+    "storage": "few days",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "B7",
+    "name": "B7 (Biotin)",
+    "tier": "tier_1_daily",
+    "rda": "30 mcg",
+    "storage": "~2 hours",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "Vitamin C",
+    "name": "Vitamin C (Ascorbic Acid)",
+    "tier": "tier_1_daily",
+    "rda": "75-90 mg",
+    "storage": "1 month",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "2000 mg"
+  },
+  {
+    "id": "B6",
+    "name": "B6 (Pyridoxine)",
+    "tier": "tier_2_weekly",
+    "rda": "1.3-1.7 mg",
+    "storage": "weeks-months",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "100 mg"
+  },
+  {
+    "id": "B9",
+    "name": "B9 (Folate)",
+    "tier": "tier_2_weekly",
+    "rda": "400 mcg",
+    "storage": "3-4 months",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "1000 mcg (synthetic)"
+  },
+  {
+    "id": "Vitamin K",
+    "name": "Vitamin K",
+    "tier": "tier_2_weekly",
+    "rda": "90-120 mcg",
+    "storage": "weeks-months",
+    "toxicity": "low",
+    "essential": "semi-essential"
+  },
+  {
+    "id": "Potassium",
+    "name": "Potassium",
+    "tier": "tier_2_weekly",
+    "rda": "2600-3400 mg",
+    "storage": "days-weeks",
+    "toxicity": "high",
+    "essential": "essential"
+  },
+  {
+    "id": "Sodium",
+    "name": "Sodium",
+    "tier": "tier_2_weekly",
+    "rda": "1500 mg",
+    "storage": "days-weeks",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "2300 mg"
+  },
+  {
+    "id": "Chromium",
+    "name": "Chromium",
+    "tier": "tier_2_weekly",
+    "rda": "20-35 mcg",
+    "storage": "days-weeks",
+    "toxicity": "low",
+    "essential": "non-essential"
+  },
+  {
+    "id": "Vitamin A",
+    "name": "Vitamin A (Retinol)",
+    "tier": "tier_3_monthly",
+    "rda": "700-900 mcg",
+    "storage": "months-1 year",
+    "toxicity": "very_high",
+    "essential": "essential",
+    "ul": "3000 mcg"
+  },
+  {
+    "id": "Vitamin D",
+    "name": "Vitamin D (Cholecalciferol)",
+    "tier": "tier_3_monthly",
+    "rda": "600-800 IU",
+    "storage": "2-3 months",
+    "toxicity": "high",
+    "essential": "semi-essential",
+    "ul": "4000 IU"
+  },
+  {
+    "id": "B12",
+    "name": "B12 (Cobalamin)",
+    "tier": "tier_3_monthly",
+    "rda": "2.4 mcg",
+    "storage": "3-5 YEARS",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "Iron",
+    "name": "Iron (Fe)",
+    "tier": "tier_3_monthly",
+    "rda": "8-18 mg",
+    "storage": "months-years",
+    "toxicity": "very_high",
+    "essential": "essential",
+    "ul": "45 mg"
+  },
+  {
+    "id": "Copper",
+    "name": "Copper (Cu)",
+    "tier": "tier_3_monthly",
+    "rda": "900 mcg",
+    "storage": "months",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "10 mg"
+  },
+  {
+    "id": "Magnesium",
+    "name": "Magnesium (Mg)",
+    "tier": "tier_3_monthly",
+    "rda": "310-420 mg",
+    "storage": "weeks-months",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "350 mg (supplements)"
+  },
+  {
+    "id": "Zinc",
+    "name": "Zinc (Zn)",
+    "tier": "tier_3_monthly",
+    "rda": "8-11 mg",
+    "storage": "weeks-months",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "40 mg"
+  },
+  {
+    "id": "Selenium",
+    "name": "Selenium (Se)",
+    "tier": "tier_3_monthly",
+    "rda": "55 mcg",
+    "storage": "weeks-months",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "400 mcg"
+  },
+  {
+    "id": "Iodine",
+    "name": "Iodine (I)",
+    "tier": "tier_3_monthly",
+    "rda": "150 mcg",
+    "storage": "weeks",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "1100 mcg"
+  },
+  {
+    "id": "Manganese",
+    "name": "Manganese (Mn)",
+    "tier": "tier_3_monthly",
+    "rda": "1.6-2.3 mg",
+    "storage": "weeks-months",
+    "toxicity": "moderate",
+    "essential": "non-essential",
+    "ul": "11 mg"
+  },
+  {
+    "id": "Calcium",
+    "name": "Calcium (Ca)",
+    "tier": "tier_4_quarterly",
+    "rda": "1000-1200 mg",
+    "storage": "years",
+    "toxicity": "moderate",
+    "essential": "essential",
+    "ul": "2500 mg"
+  },
+  {
+    "id": "Phosphorus",
+    "name": "Phosphorus (P)",
+    "tier": "tier_4_quarterly",
+    "rda": "700 mg",
+    "storage": "years",
+    "toxicity": "low",
+    "essential": "essential"
+  },
+  {
+    "id": "Vitamin E",
+    "name": "Vitamin E (Tocopherol)",
+    "tier": "tier_4_quarterly",
+    "rda": "15 mg",
+    "storage": "months-years",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "1000 mg"
+  },
+  {
+    "id": "Molybdenum",
+    "name": "Molybdenum (Mo)",
+    "tier": "tier_4_quarterly",
+    "rda": "45 mcg",
+    "storage": "days-weeks",
+    "toxicity": "low",
+    "essential": "non-essential",
+    "ul": "2000 mcg"
+  },
+  {
+    "id": "Fluoride",
+    "name": "Fluoride (F)",
+    "tier": "tier_4_quarterly",
+    "rda": "3-4 mg",
+    "storage": "years",
+    "toxicity": "moderate",
+    "essential": "non-essential",
+    "ul": "10 mg"
+  }
+]
