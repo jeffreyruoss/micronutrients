@@ -14,7 +14,7 @@ function Th({ children, reversed, sorted, onSort }) {
     <Table.Th>
       <UnstyledButton onClick={onSort} style={{ width: '100%' }}>
         <Group justify="space-between" wrap="nowrap">
-          <Text fw={700} fz="sm" style={{ whiteSpace: 'nowrap' }}>
+          <Text fw={700} fz="sm" style={{ whiteSpace: 'nowrap' }} c="salad-green.8">
             {children}
           </Text>
           <Center>
@@ -71,14 +71,14 @@ export function NutrientTable({ data, onRowClick }) {
       case 'very_high': return 'red.9';
       case 'high': return 'red';
       case 'moderate': return 'yellow';
-      case 'low': return 'green';
+      case 'low': return 'salad-green';
       default: return 'gray';
     }
   };
 
   const getEssentialityColor = (essential) => {
     switch (essential) {
-        case 'essential': return 'green';
+        case 'essential': return 'salad-green';
         case 'semi-essential': return 'lime';
         default: return 'gray';
       }
@@ -102,7 +102,7 @@ export function NutrientTable({ data, onRowClick }) {
         </Badge>
       </Table.Td>
       <Table.Td>
-        <IconInfoCircle size={20} color="gray" style={{ cursor: 'pointer' }} />
+        <IconInfoCircle size={20} color="#5f9dcd" style={{ cursor: 'pointer' }} />
       </Table.Td>
     </Table.Tr>
   ));
@@ -116,7 +116,7 @@ export function NutrientTable({ data, onRowClick }) {
                   <Card key={row.id} shadow="sm" padding="lg" radius="md" withBorder onClick={() => onRowClick(row)}>
                       <Group justify="space-between" mb="xs">
                           <Text fw={700} size="lg">{row.name}</Text>
-                          <IconInfoCircle size={20} color="gray" />
+                          <IconInfoCircle size={20} color="#5f9dcd" />
                       </Group>
                       
                       <Stack gap="xs" mb="md">

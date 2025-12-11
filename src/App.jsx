@@ -61,7 +61,7 @@ function App() {
         
         <Header />
 
-        <Paper shadow="sm" p="md" withBorder>
+        <Paper p="md">
             <Stack>
                 <FilterBar
                     search={search} onSearchChange={setSearch}

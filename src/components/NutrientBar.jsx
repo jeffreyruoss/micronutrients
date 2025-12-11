@@ -62,7 +62,7 @@ export function NutrientBar({ rdaStr, ulStr }) {
         >
             {/* Gray: 0 to RDA */}
             <Box 
-                bg="gray.6" 
+                bg="gray.3" 
                 style={{ 
                     position: 'absolute',
                     left: 0,
@@ -75,7 +75,7 @@ export function NutrientBar({ rdaStr, ulStr }) {
 
             {/* Green: RDA to UL (or End) */}
             <Box 
-                bg="teal.6"
+                bg="salad-green.5"
                 style={{
                     position: 'absolute',
                     left: `${rdaPct}%`,
@@ -89,7 +89,7 @@ export function NutrientBar({ rdaStr, ulStr }) {
             {/* Red: UL to End */}
             {hasUL && (
                 <Box 
-                    bg="red.8"
+                    bg="red.6"
                     style={{
                         position: 'absolute',
                         left: `${ulPct}%`,

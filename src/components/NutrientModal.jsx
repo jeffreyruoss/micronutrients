@@ -12,14 +12,14 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
       case 'very_high': return 'red.9';
       case 'high': return 'red';
       case 'moderate': return 'yellow';
-      case 'low': return 'green';
+      case 'low': return 'salad-green';
       default: return 'gray';
     }
   };
 
   const getEssentialityColor = (essential) => {
     switch (essential) {
-      case 'essential': return 'green';
+      case 'essential': return 'salad-green';
       case 'semi-essential': return 'lime';
       default: return 'gray';
     }
@@ -31,7 +31,7 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
         <Grid.Col span={6}>
             <Paper withBorder p="md" bg="var(--mantine-color-body)">
                 <Text size="xs" c="dimmed" tt="uppercase" fw={700}>RDA (Recommended)</Text>
-                <Text size="xl" fw={700} c="teal">{nutrient.rda}</Text>
+                <Text size="xl" fw={700} c="salad-green.8">{nutrient.rda}</Text>
             </Paper>
         </Grid.Col>
         <Grid.Col span={6}>
@@ -82,7 +82,7 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
                 <Grid>
                     <Grid.Col span={{ base: 12, sm: 4 }}>
                         <Group mb="xs">
-                           <ThemeIcon color="green" variant="light"><IconLeaf size={16} /></ThemeIcon>
+                           <ThemeIcon color="salad-green" variant="light"><IconLeaf size={16} /></ThemeIcon>
                            <Text fw={700} size="sm">Vegan</Text>
                         </Group>
                         <List size="sm" spacing="xs" icon={<Text size="xs">🌱</Text>}>
