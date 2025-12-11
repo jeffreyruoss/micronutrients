@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Table, ScrollArea, UnstyledButton, Group, Text, Center, Badge } from '@mantine/core';
+import { Table, ScrollArea, UnstyledButton, Group, Text, Center, Badge, Card, Stack, SimpleGrid } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { IconSelector, IconChevronDown, IconChevronUp, IconInfoCircle } from '@tabler/icons-react';
 import { NutrientBar } from './NutrientBar';
 
@@ -105,6 +106,47 @@ export function NutrientTable({ data, onRowClick }) {
       </Table.Td>
     </Table.Tr>
   ));
+
+  const isMobile = useMediaQuery('(max-width: 1023px)');
+
+  if (isMobile) {
+      return (
+          <Stack>
+              {sortedData.map(row => (
+                  <Card key={row.id} shadow="sm" padding="lg" radius="md" withBorder onClick={() => onRowClick(row)}>
+                      <Group justify="space-between" mb="xs">
+                          <Text fw={700} size="lg">{row.name}</Text>
+                          <IconInfoCircle size={20} color="gray" />
+                      </Group>
+                      
+                      <Stack gap="xs" mb="md">
+                          <Text size="sm" c="dimmed">Intake Range</Text>
+                          <NutrientBar rdaStr={row.rda} ulStr={row.ul} />
+                      </Stack>
+
+                      <SimpleGrid cols={2} spacing="xs">
+                          <div>
+                              <Text size="xs" c="dimmed">Storage</Text>
+                              <Text size="sm" fw={500}>{row.storage}</Text>
+                          </div>
+                          <div>
+                             <Text size="xs" c="dimmed">Essentiality</Text>
+                             <Badge color={getEssentialityColor(row.essential)} variant="dot" size="sm">
+                                {row.essential}
+                            </Badge>
+                          </div>
+                           <div>
+                              <Text size="xs" c="dimmed">Toxicity Risk</Text>
+                              <Badge color={getToxicityColor(row.toxicity)} variant="light" size="sm">
+                                {row.toxicity.replace('_', ' ')}
+                            </Badge>
+                          </div>
+                      </SimpleGrid>
+                  </Card>
+              ))}
+          </Stack>
+      );
+  }
 
   return (
     <ScrollArea>
