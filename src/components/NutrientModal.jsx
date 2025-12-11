@@ -1,5 +1,5 @@
 import { Modal, Grid, Text, Badge, Box, Divider, Paper, List, Group, ThemeIcon } from '@mantine/core';
-import { IconLeaf, IconMeat, IconCheese } from '@tabler/icons-react';
+import { IconLeaf, IconMeat, IconCheese, IconInfoCircle } from '@tabler/icons-react';
 import { NutrientBar } from './NutrientBar';
 
 export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
@@ -66,6 +66,18 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
                 {nutrient.essential}
             </Badge>
         </Grid.Col>
+
+        {nutrient.notes && (
+             <Grid.Col span={12}>
+                 <Paper withBorder p="sm" bg="blue.0" style={{ borderColor: 'var(--mantine-color-blue-2)' }}>
+                    <Group gap="xs" mb={4}>
+                        <IconInfoCircle size={16} color="var(--mantine-color-blue-6)" /> 
+                        <Text size="xs" c="blue.8" tt="uppercase" fw={700}>Special Note</Text>
+                    </Group>
+                    <Text size="sm" c="blue.9">{nutrient.notes}</Text>
+                 </Paper>
+            </Grid.Col>
+        )}
 
         {nutrient.ul && (
             <Grid.Col span={12} mt="md">

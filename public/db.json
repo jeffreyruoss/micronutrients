@@ -19,10 +19,11 @@
     "id": "B3",
     "name": "B3 (Niacin)",
     "rda": "14-16 mg",
-    "storage": "hours",
+    "storage": "not stored*",
     "toxicity": "high",
     "essential": "essential",
-    "ul": "35 mg"
+    "ul": "35 mg",
+    "notes": "Niacin is water-soluble and is not significantly stored in the body."
   },
   {
     "id": "B5",
@@ -36,9 +37,10 @@
     "id": "B7",
     "name": "B7 (Biotin)",
     "rda": "30 mcg",
-    "storage": "~2 hours",
+    "storage": "not stored (excreted within 24h)*",
     "toxicity": "low",
-    "essential": "essential"
+    "essential": "essential",
+    "notes": "Biotin is water-soluble and doesn't store significantly in the body. It's typically excreted within 24 hours."
   },
   {
     "id": "Vitamin C",
@@ -73,7 +75,8 @@
     "rda": "90-120 mcg",
     "storage": "weeks-months",
     "toxicity": "low",
-    "essential": "semi-essential"
+    "essential": "essential*",
+    "notes": "Vitamin K is considered essential, though the body can produce small amounts via gut bacteria."
   },
   {
     "id": "Potassium",
@@ -98,7 +101,7 @@
     "rda": "20-35 mcg",
     "storage": "days-weeks",
     "toxicity": "low",
-    "essential": "non-essential"
+    "essential": "essential"
   },
   {
     "id": "Vitamin A",
@@ -115,8 +118,9 @@
     "rda": "600-800 IU",
     "storage": "2-3 months",
     "toxicity": "high",
-    "essential": "semi-essential",
-    "ul": "4000 IU"
+    "essential": "semi-essential*",
+    "ul": "4000 IU",
+    "notes": "The body can produce vitamin D from sunlight exposure, which is why it is sometimes classified as semi-essential."
   },
   {
     "id": "B12",
@@ -186,7 +190,7 @@
     "rda": "1.6-2.3 mg",
     "storage": "weeks-months",
     "toxicity": "moderate",
-    "essential": "non-essential",
+    "essential": "essential",
     "ul": "11 mg"
   },
   {

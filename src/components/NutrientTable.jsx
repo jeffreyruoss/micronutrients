@@ -112,6 +112,9 @@ export function NutrientTable({ data, onRowClick }) {
   if (isMobile) {
       return (
           <Stack>
+              <Text size="sm" c="gray.7" fs="italic">
+                 * Values marked with an asterisk are nuanced. Click the micronutrient to see more data.
+              </Text>
               {sortedData.map(row => (
                   <Card key={row.id} shadow="sm" padding="lg" radius="md" withBorder onClick={() => onRowClick(row)}>
                       <Group justify="space-between" mb="xs">
@@ -149,8 +152,12 @@ export function NutrientTable({ data, onRowClick }) {
   }
 
   return (
-    <ScrollArea>
-      <Table horizontalSpacing="md" verticalSpacing="xs" highlightOnHover>
+    <Stack gap="xs">
+      <Text size="sm" c="gray.7" fs="italic">
+         * Values marked with an asterisk are nuanced. Click the micronutrient to see more data.
+      </Text>
+      <ScrollArea>
+        <Table horizontalSpacing="md" verticalSpacing="xs" highlightOnHover>
         <Table.Thead>
           <Table.Tr>
             <Th
@@ -201,6 +208,7 @@ export function NutrientTable({ data, onRowClick }) {
           )}
         </Table.Tbody>
       </Table>
-    </ScrollArea>
+      </ScrollArea>
+    </Stack>
   );
 }

@@ -66,7 +66,19 @@ function App() {
     const pageHeight = doc.internal.pageSize.height;
 
     data.forEach((n) => {
-        const sentence = `${n.name} has an RDA of ${n.rda}, ${n.ul ? 'an upper limit of ' + n.ul : 'no upper limit'}, a storage duration of ${n.storage}, a ${n.toxicity.replace('_', ' ')} toxicity risk and is ${n.essential === 'essential' ? 'an essential' : 'a ' + n.essential} nutrient.`;
+        let sentence = `${n.name} has an RDA of ${n.rda} and ${n.ul ? 'an upper limit of ' + n.ul : 'no upper limit'}. `;
+        
+        if (n.storage.toLowerCase().includes('not stored')) {
+            sentence += `It is ${n.storage}. `;
+        } else {
+            sentence += `It has a storage duration of ${n.storage}. `;
+        }
+
+        sentence += `It has a ${n.toxicity.replace('_', ' ')} toxicity risk and is ${n.essential === 'essential' ? 'an essential' : 'a ' + n.essential} nutrient.`;
+
+        if (n.notes) {
+            sentence += ` Note: ${n.notes}`;
+        }
         
         const splitText = doc.splitTextToSize(sentence, 190);
         
