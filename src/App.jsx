@@ -1,5 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Container, Paper, Stack, LoadingOverlay } from '@mantine/core';
+import { Container, Paper, Stack, LoadingOverlay, Button } from '@mantine/core';
+import { IconDownload } from '@tabler/icons-react';
+import { jsPDF } from 'jspdf';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { NutrientTable } from './components/NutrientTable';
@@ -55,11 +57,71 @@ function App() {
     setEssential(null);
   };
 
+  const downloadNutrientFacts = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(10);
+    
+    let y = 10;
+    const lineHeight = 7;
+    const pageHeight = doc.internal.pageSize.height;
+
+    data.forEach((n) => {
+        const sentence = `${n.name} has an RDA of ${n.rda}, ${n.ul ? 'an upper limit of ' + n.ul : 'no upper limit'}, a storage duration of ${n.storage}, a ${n.toxicity.replace('_', ' ')} toxicity risk and is ${n.essential === 'essential' ? 'an essential' : 'a ' + n.essential} nutrient.`;
+        
+        const splitText = doc.splitTextToSize(sentence, 190);
+        
+        if (y + (splitText.length * lineHeight) > pageHeight - 10) {
+            doc.addPage();
+            y = 10;
+        }
+        
+        doc.text(splitText, 10, y);
+        y += (splitText.length * lineHeight) + 2; // Extra spacing
+    });
+    
+    doc.save('nutrient-facts.pdf');
+  };
+
+  const downloadFoodFacts = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(10);
+    
+    let y = 10;
+    const lineHeight = 7;
+    const pageHeight = doc.internal.pageSize.height;
+
+    data.forEach((n) => {
+        const foods = foodData[n.id];
+        if (!foods) return;
+
+        const sentence = `${n.name} top vegan food sources are ${foods.vegan.join(', ')}. Top vegetarian sources are ${foods.vegetarian.join(', ')}. Top omnivore sources are ${foods.omnivore.join(', ')}.`;
+        
+        const splitText = doc.splitTextToSize(sentence, 190);
+         
+        if (y + (splitText.length * lineHeight) > pageHeight - 10) {
+            doc.addPage();
+            y = 10;
+        }
+
+        doc.text(splitText, 10, y);
+        y += (splitText.length * lineHeight) + 2;
+    });
+
+    doc.save('food-facts.pdf');
+  };
+
   return (
     <Container size="xl" py="xl">
         <LoadingOverlay visible={loading} overlayProps={{ radius: "sm", blur: 2 }} />
         
-        <Header />
+        <Header>
+            <Button leftSection={<IconDownload size={16} />} variant="light" color="salad-green.9" onClick={downloadNutrientFacts} size="xs" mr="xs">
+                Nutrients PDF
+            </Button>
+            <Button leftSection={<IconDownload size={16} />} variant="light" color="salad-green.9" onClick={downloadFoodFacts} size="xs">
+                Foods PDF
+            </Button>
+        </Header>
 
         <Paper p="md">
             <Stack>
