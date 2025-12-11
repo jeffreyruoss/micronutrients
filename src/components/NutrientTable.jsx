@@ -12,7 +12,7 @@ function Th({ children, reversed, sorted, onSort }) {
   return (
     <Table.Th>
       <UnstyledButton onClick={onSort} style={{ width: '100%' }}>
-        <Group justify="space-between">
+        <Group justify="space-between" wrap="nowrap">
           <Text fw={700} fz="sm" style={{ whiteSpace: 'nowrap' }}>
             {children}
           </Text>
@@ -86,7 +86,7 @@ export function NutrientTable({ data, onRowClick }) {
   const rows = sortedData.map((row) => (
     <Table.Tr key={row.id} onClick={() => onRowClick(row)} style={{ cursor: 'pointer' }}>
       <Table.Td fw={500}>{row.name}</Table.Td>
-      <Table.Td style={{ minWidth: 400 }}>
+      <Table.Td style={{ minWidth: 400, paddingRight: 'var(--mantine-spacing-xl)' }}>
           <NutrientBar rdaStr={row.rda} ulStr={row.ul} />
       </Table.Td>
       <Table.Td>{row.storage}</Table.Td>
@@ -108,7 +108,7 @@ export function NutrientTable({ data, onRowClick }) {
 
   return (
     <ScrollArea>
-      <Table horizontalSpacing="md" verticalSpacing="xs" highlightOnHover layout="fixed">
+      <Table horizontalSpacing="md" verticalSpacing="xs" highlightOnHover>
         <Table.Thead>
           <Table.Tr>
             <Th
@@ -146,7 +146,7 @@ export function NutrientTable({ data, onRowClick }) {
             >
               Essentiality
             </Th>
-            <Table.Th />
+            <Table.Th style={{ width: 40 }} />
           </Table.Tr>
         </Table.Thead>
         <Table.Tbody>
