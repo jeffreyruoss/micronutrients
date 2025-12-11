@@ -1,0 +1,137 @@
+{
+  "B1": {
+    "vegan": ["Nutritional Yeast", "Sunflower Seeds", "Navy Beans", "Black Beans", "Lentils"],
+    "vegetarian": ["Nutritional Yeast", "Sunflower Seeds", "Navy Beans", "Black Beans", "Lentils"],
+    "omnivore": ["Pork Chops", "Trout", "Salmon", "Sunflower Seeds", "Acorn Squash"]
+  },
+  "B2": {
+    "vegan": ["Almonds", "Spinach", "Tempeh", "Mushrooms", "Avocado"],
+    "vegetarian": ["Eggs", "Milk", "Yogurt", "Feta Cheese", "Almonds"],
+    "omnivore": ["Beef Liver", "Lamb", "Eggs", "Milk", "Natural Yogurt"]
+  },
+  "B3": {
+    "vegan": ["Nutritional Yeast", "Peanuts", "Brown Rice", "Mushrooms", "Avocado"],
+    "vegetarian": ["Nutritional Yeast", "Peanuts", "Brown Rice", "Mushrooms", "Cottage Cheese"],
+    "omnivore": ["Chicken Breast", "Turkey", "Tuna", "Beef Liver", "Pork"]
+  },
+  "B5": {
+    "vegan": ["Sunflower Seeds", "Avocado", "Sweet Potato", "Lentils", "Mushrooms"],
+    "vegetarian": ["Sunflower Seeds", "Avocado", "Sweet Potato", "Yogurt", "Eggs"],
+    "omnivore": ["Chicken Liver", "Duck", "Beef", "Chicken", "Salmon"]
+  },
+  "B7": {
+    "vegan": ["Sweet Potato", "Spinach", "Broccoli", "Avocado", "Sunflower Seeds"],
+    "vegetarian": ["Eggs", "Cheddar Cheese", "Milk", "Sweet Potato", "Yogurt"],
+    "omnivore": ["Beef Liver", "Eggs", "Salmon", "Pork", "Hamburger"]
+  },
+  "Vitamin C": {
+    "vegan": ["Guava", "Kiwi", "Bell Peppers", "Strawberries", "Oranges"],
+    "vegetarian": ["Guava", "Kiwi", "Bell Peppers", "Strawberries", "Oranges"],
+    "omnivore": ["Guava", "Kiwi", "Bell Peppers", "Strawberries", "Oranges"]
+  },
+  "B6": {
+    "vegan": ["Chickpeas", "Potatoes", "Bananas", "Pistachios", "Avocado"],
+    "vegetarian": ["Chickpeas", "Potatoes", "Bananas", "Cottage Cheese", "Eggs"],
+    "omnivore": ["Beef Liver", "Tuna", "Salmon", "Chicken Breast", "Turkey"]
+  },
+  "B9": {
+    "vegan": ["Edamame", "Lentils", "Asparagus", "Spinach", "Black-eyed Peas"],
+    "vegetarian": ["Edamame", "Lentils", "Asparagus", "Spinach", "Eggs"],
+    "omnivore": ["Beef Liver", "Edamame", "Lentils", "Asparagus", "Spinach"]
+  },
+  "Vitamin K": {
+    "vegan": ["Natto", "Kale", "Spinach", "Collard Greens", "Brussels Sprouts"],
+    "vegetarian": ["Natto", "Kale", "Spinach", "Collard Greens", "Hard Cheese"],
+    "omnivore": ["Natto", "Kale", "Spinach", "Chicken", "Beef Liver"]
+  },
+  "Potassium": {
+    "vegan": ["Dried Apricots", "Lentils", "Acorn Squash", "Prunes", "Potato"],
+    "vegetarian": ["Dried Apricots", "Lentils", "Acorn Squash", "Yogurt", "Milk"],
+    "omnivore": ["Dried Apricots", "Salmon", "Chicken Breast", "Lentils", "Beef"]
+  },
+  "Sodium": {
+    "vegan": ["Sea Salt", "Olives", "Pickles", "Sauerkraut", "Miso"],
+    "vegetarian": ["Sea Salt", "Cheese", "Cottage Cheese", "Olives", "Pickles"],
+    "omnivore": ["Sea Salt", "Ham", "Bacon", "Shrimp", "Cheese"]
+  },
+  "Chromium": {
+    "vegan": ["Broccoli", "Garlic", "Grape Juice", "Oranges", "Apples"],
+    "vegetarian": ["Broccoli", "Garlic", "Grape Juice", "Oranges", "Potatoes"],
+    "omnivore": ["Mussels", "Broccoli", "Turkey", "Beef", "Oysters"]
+  },
+  "Vitamin A": {
+    "vegan": ["Sweet Potato", "Carrots", "Spinach", "Kale", "Cantaloupe"],
+    "vegetarian": ["Sweet Potato", "Carrots", "Spinach", "Butter", "Eggs"],
+    "omnivore": ["Beef Liver", "Cod Liver Oil", "Mackerel", "Salmon", "Butter"]
+  },
+  "Vitamin D": {
+    "vegan": ["Maitake Mushrooms", "Fortified Soy Milk", "Fortified Orange Juice", "Portobello Mushrooms (UV)", "Chanterelle Mushrooms"],
+    "vegetarian": ["Fortified Milk", "Egg Yolks", "Maitake Mushrooms", "Cheese", "Fortified Yogurt"],
+    "omnivore": ["Cod Liver Oil", "Salmon", "Swordfish", "Tuna", "Sardines"]
+  },
+  "B12": {
+    "vegan": ["Nutritional Yeast", "Fortified Soy Milk", "Tempeh", "Nori", "Fortified Cereal"],
+    "vegetarian": ["Clams (rarely)", "Swiss Cheese", "Eggs", "Milk", "Yogurt"],
+    "omnivore": ["Clams", "Beef Liver", "Sardines", "Beef", "Tuna"]
+  },
+  "Iron": {
+    "vegan": ["Lentils", "Spinach", "Tofu", "Dark Chocolate", "Pumpkin Seeds"],
+    "vegetarian": ["Lentils", "Spinach", "Tofu", "Eggs", "Dark Chocolate"],
+    "omnivore": ["Beef Liver", "Oysters", "Clams", "Beef", "Sardines"]
+  },
+  "Copper": {
+    "vegan": ["Spirulina", "Shiitake Mushrooms", "Cashews", "Kale", "Cocoa"],
+    "vegetarian": ["Spirulina", "Shiitake Mushrooms", "Cashews", "Goat Cheese", "Cocoa"],
+    "omnivore": ["Beef Liver", "Oysters", "Lobster", "Crab", "Lamb"]
+  },
+  "Magnesium": {
+    "vegan": ["Pumpkin Seeds", "Spinach", "Swiss Chard", "Dark Chocolate", "Black Beans"],
+    "vegetarian": ["Pumpkin Seeds", "Spinach", "Swiss Chard", "Dark Chocolate", "Yogurt"],
+    "omnivore": ["Pumpkin Seeds", "Mackerel", "Spinach", "Salmon", "Swiss Chard"]
+  },
+  "Zinc": {
+    "vegan": ["Pumpkin Seeds", "Hemp Seeds", "Chickpeas", "Lentils", "Cashews"],
+    "vegetarian": ["Pumpkin Seeds", "Hemp Seeds", "Yogurt", "Cheese", "Chickpeas"],
+    "omnivore": ["Oysters", "Beef", "Crab", "Pork", "Chicken"]
+  },
+  "Selenium": {
+    "vegan": ["Brazil Nuts", "Brown Rice", "Sunflower Seeds", "Mushrooms", "Oats"],
+    "vegetarian": ["Brazil Nuts", "Eggs", "Cottage Cheese", "Brown Rice", "Sunflower Seeds"],
+    "omnivore": ["Brazil Nuts", "Tuna", "Oysters", "Pork", "Beef"]
+  },
+  "Iodine": {
+    "vegan": ["Seaweed (Kombu)", "Seaweed (Wakame)", "Prunes", "Iodized Salt", "Lima Beans"],
+    "vegetarian": ["Seaweed", "Yogurt", "Eggs", "Milk", "Cheese"],
+    "omnivore": ["Seaweed", "Cod", "Shrimp", "Tuna", "Eggs"]
+  },
+  "Manganese": {
+    "vegan": ["Hazelnuts", "Pecans", "Brown Rice", "Chickpeas", "Spinach"],
+    "vegetarian": ["Hazelnuts", "Pecans", "Brown Rice", "Chickpeas", "Spinach"],
+    "omnivore": ["Mussels", "Hazelnuts", "Pecans", "Brown Rice", "Clams"]
+  },
+  "Calcium": {
+    "vegan": ["Tofu", "Almonds", "Collard Greens", "Kale", "Chia Seeds"],
+    "vegetarian": ["Parmesan Cheese", "Yogurt", "Milk", "Whey Protein", "Tofu"],
+    "omnivore": ["Sardines (with bones)", "Parmesan Cheese", "Yogurt", "Milk", "Salmon"]
+  },
+  "Phosphorus": {
+    "vegan": ["Pumpkin Seeds", "Sunflower Seeds", "Lentils", "Tofu", "Quinoa"],
+    "vegetarian": ["Cheese", "Yogurt", "Milk", "Eggs", "Pumpkin Seeds"],
+    "omnivore": ["Scallops", "Salmon", "Sardines", "Chicken", "Beef"]
+  },
+  "Vitamin E": {
+    "vegan": ["Sunflower Seeds", "Almonds", "Avocado", "Spinach", "Butternut Squash"],
+    "vegetarian": ["Sunflower Seeds", "Almonds", "Avocado", "Spinach", "Eggs"],
+    "omnivore": ["Sunflower Seeds", "Almonds", "Abalone", "Goose Meat", "Salmon"]
+  },
+  "Molybdenum": {
+    "vegan": ["Black-eyed Peas", "Lima Beans", "Lentils", "Peanuts", "Almonds"],
+    "vegetarian": ["Black-eyed Peas", "Lima Beans", "Lentils", "Yogurt", "Cheese"],
+    "omnivore": ["Beef Liver", "Black-eyed Peas", "Lima Beans", "Chicken", "Kidney"]
+  },
+  "Fluoride": {
+    "vegan": ["Tea (Black/Green)", "Grapes", "Raisins", "Spinach", "Potatoes"],
+    "vegetarian": ["Tea (Black/Green)", "Grapes", "Raisins", "Potatoes", "Wine"],
+    "omnivore": ["Tea (Black/Green)", "Crab", "Shrimp", "Grapes", "Raisins"]
+  }
+}

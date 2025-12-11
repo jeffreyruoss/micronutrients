@@ -1,8 +1,11 @@
-import { Modal, Grid, Text, Badge, Box, Divider, Paper } from '@mantine/core';
+import { Modal, Grid, Text, Badge, Box, Divider, Paper, List, Group, ThemeIcon } from '@mantine/core';
+import { IconLeaf, IconMeat, IconCheese } from '@tabler/icons-react';
 import { NutrientBar } from './NutrientBar';
 
-export function NutrientModal({ nutrient, opened, onClose }) {
+export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
   if (!nutrient) return null;
+
+  const foods = foodSources && foodSources[nutrient.id];
 
   const getToxicityColor = (toxicity) => {
     switch (toxicity) {
@@ -70,6 +73,49 @@ export function NutrientModal({ nutrient, opened, onClose }) {
                     <Text size="xs" c="red.9" tt="uppercase" fw={700}>Upper Limit (UL) - Danger Zone</Text>
                     <Text fw={500} c="red.9">{nutrient.ul}</Text>
                  </Paper>
+            </Grid.Col>
+        )}
+
+        {foods && (
+            <Grid.Col span={12}>
+                <Divider my="md" label="Top Food Sources" labelPosition="center" />
+                <Grid>
+                    <Grid.Col span={{ base: 12, sm: 4 }}>
+                        <Group mb="xs">
+                           <ThemeIcon color="green" variant="light"><IconLeaf size={16} /></ThemeIcon>
+                           <Text fw={700} size="sm">Vegan</Text>
+                        </Group>
+                        <List size="sm" spacing="xs" icon={<Text size="xs">🌱</Text>}>
+                            {foods.vegan.map((item, index) => (
+                                <List.Item key={index}>{item}</List.Item>
+                            ))}
+                        </List>
+                    </Grid.Col>
+                    
+                    <Grid.Col span={{ base: 12, sm: 4 }}>
+                        <Group mb="xs">
+                           <ThemeIcon color="lime" variant="light"><IconCheese size={16} /></ThemeIcon>
+                           <Text fw={700} size="sm">Vegetarian</Text>
+                        </Group>
+                         <List size="sm" spacing="xs" icon={<Text size="xs">🧀</Text>}>
+                            {foods.vegetarian.map((item, index) => (
+                                <List.Item key={index}>{item}</List.Item>
+                            ))}
+                        </List>
+                    </Grid.Col>
+
+                    <Grid.Col span={{ base: 12, sm: 4 }}>
+                         <Group mb="xs">
+                           <ThemeIcon color="red" variant="light"><IconMeat size={16} /></ThemeIcon>
+                           <Text fw={700} size="sm">Omnivore</Text>
+                        </Group>
+                        <List size="sm" spacing="xs" icon={<Text size="xs">🍖</Text>}>
+                            {foods.omnivore.map((item, index) => (
+                                <List.Item key={index}>{item}</List.Item>
+                            ))}
+                        </List>
+                    </Grid.Col>
+                </Grid>
             </Grid.Col>
         )}
       </Grid>
