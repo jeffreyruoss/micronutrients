@@ -70,9 +70,10 @@
     "omnivore": ["Cod Liver Oil", "Salmon", "Swordfish", "Tuna", "Sardines"]
   },
   "B12": {
-    "vegan": ["Nutritional Yeast", "Fortified Soy Milk", "Tempeh", "Nori", "Fortified Cereal"],
-    "vegetarian": ["Clams (rarely)", "Swiss Cheese", "Eggs", "Milk", "Yogurt"],
-    "omnivore": ["Clams", "Beef Liver", "Sardines", "Beef", "Tuna"]
+    "vegan": ["Fortified Nutritional Yeast*", "Fortified Soy Milk", "Fortified Cereal"],
+    "vegetarian": ["Swiss Cheese", "Eggs", "Milk", "Yogurt"],
+    "omnivore": ["Clams", "Beef Liver", "Sardines", "Beef", "Tuna"],
+    "notes": "Vitamin B12 is not naturally found in plant foods. Vegans must rely on fortified foods or supplements. Fermented foods (Tempeh) and algae (Nori) are NOT reliable sources."
   },
   "Iron": {
     "vegan": ["Lentils", "Spinach", "Tofu", "Dark Chocolate", "Pumpkin Seeds"],

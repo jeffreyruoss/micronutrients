@@ -8,7 +8,7 @@ export function Header({ children }) {
                 <Text fz={50} style={{ lineHeight: 1 }}>🥗</Text>
                 <div>
                     <Title order={1} size="h3" c="salad-green.8">Micronutrients</Title>
-                    <Text size="sm" c="dimmed">Storage Duration, Toxicity, Essentiality</Text>
+                    <Text size="sm" c="gray.7">Explore detailed data on vitamins and minerals, including storage times, toxicity risks, and essential food sources.</Text>
                 </div>
             </Group>
             <Group>

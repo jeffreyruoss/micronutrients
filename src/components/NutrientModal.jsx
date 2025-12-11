@@ -128,6 +128,16 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
                         </List>
                     </Grid.Col>
                 </Grid>
+
+                {foods.notes && (
+                    <Paper withBorder p="sm" bg="orange.0" mt="md" style={{ borderColor: 'var(--mantine-color-orange-2)' }}>
+                        <Group gap="xs" mb={4}>
+                            <IconInfoCircle size={16} color="var(--mantine-color-orange-6)" /> 
+                            <Text size="xs" c="orange.8" tt="uppercase" fw={700}>Food Source Facts</Text>
+                        </Group>
+                        <Text size="sm" c="orange.9">{foods.notes}</Text>
+                    </Paper>
+                )}
             </Grid.Col>
         )}
       </Grid>

@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Container, Paper, Stack, LoadingOverlay, Button } from '@mantine/core';
-import { IconDownload } from '@tabler/icons-react';
+import { Container, Paper, Stack, LoadingOverlay, Button, Alert, Modal, Title, Text, List, ThemeIcon, Group } from '@mantine/core';
+import { IconDownload, IconAlertCircle, IconCheck } from '@tabler/icons-react';
 import { jsPDF } from 'jspdf';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
@@ -18,6 +18,15 @@ function App() {
   
   const [selectedNutrient, setSelectedNutrient] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
+
+  const [disclaimerModalOpen, setDisclaimerModalOpen] = useState(() => localStorage.getItem('disclaimerAcknowledged') !== 'true');
+  const [disclaimerAcknowledged, setDisclaimerAcknowledged] = useState(() => localStorage.getItem('disclaimerAcknowledged') === 'true');
+
+  const handleAcknowledge = () => {
+    localStorage.setItem('disclaimerAcknowledged', 'true');
+    setDisclaimerAcknowledged(true);
+    setDisclaimerModalOpen(false);
+  };
 
   useEffect(() => {
     Promise.all([
@@ -126,6 +135,8 @@ function App() {
     <Container size="xl" py="xl">
         <LoadingOverlay visible={loading} overlayProps={{ radius: "sm", blur: 2 }} />
         
+
+
         <Header>
             <Button leftSection={<IconDownload size={16} />} variant="light" color="salad-green.9" onClick={downloadNutrientFacts} size="xs" mr="xs">
                 Nutrients PDF
@@ -134,6 +145,18 @@ function App() {
                 Foods PDF
             </Button>
         </Header>
+
+        <Alert variant="light" color="gray" mb="lg" p="sm" bg="rgba(43, 115, 102, 0.1)">
+           <Group justify="space-between" align="center">
+               <Group gap="xs">
+                   <IconAlertCircle size={20} color="#2B7366" />
+                   <Text size="sm" c="#2B7366"><Text span fw={700}>Data Disclaimer:</Text> Errors or omissions may occur. Please verify all information.</Text>
+               </Group>
+               <Button variant="outline" color="#2B7366" size="xs" onClick={() => setDisclaimerModalOpen(true)} style={{ borderColor: '#2B7366' }}>
+                   Review Disclaimers
+               </Button>
+           </Group>
+        </Alert>
 
         <Paper p="md">
             <Stack>
@@ -154,6 +177,54 @@ function App() {
             opened={modalOpened} 
             onClose={() => setModalOpened(false)} 
         />
+
+        <Modal 
+            opened={disclaimerModalOpen} 
+            onClose={() => setDisclaimerModalOpen(false)} 
+            title={<Title order={2} size="h3" c="red.8">Important Legal & Medical Disclaimer</Title>}
+            size="lg"
+            closeOnClickOutside={disclaimerAcknowledged}
+            closeOnEscape={disclaimerAcknowledged}
+            withCloseButton={disclaimerAcknowledged}
+        >
+            <Stack gap="md">
+                <Alert variant="light" color="red" icon={<IconAlertCircle />}>
+                    Please read the following information carefully before using this application.
+                </Alert>
+                
+                <List spacing="sm" size="sm" center icon={
+                    <ThemeIcon color="red" size={24} radius="xl">
+                        <IconAlertCircle size={16} />
+                    </ThemeIcon>
+                }>
+                    <List.Item>
+                        <Text fw={700} span>AI-Generated Content:</Text> The data presented has been synthesized using advanced AI technologies. While efforts are made to ensure accuracy, errors or omissions may occur.
+                    </List.Item>
+                    <List.Item>
+                        <Text fw={700} span>Not Medical Advice:</Text> This information is for educational purposes only and is NOT a substitute for professional medical advice, diagnosis, or treatment.
+                    </List.Item>
+                    <List.Item>
+                        <Text fw={700} span>Use at Your Own Risk:</Text> You acknowledge that you use this application at your own risk. The creators assume no liability for any adverse effects.
+                    </List.Item>
+                    <List.Item>
+                         <Text fw={700} span>Emergency:</Text> If you suspect you have a medical emergency, call your doctor or emergency services (911) immediately.
+                    </List.Item>
+                </List>
+
+                <Group justify="flex-end" mt="md">
+                    {!disclaimerAcknowledged ? (
+                         <Button onClick={handleAcknowledge} color="red" leftSection={<IconCheck size={16} />}>
+                            I Acknowledge & Agree
+                        </Button>
+                    ) : (
+                        <Button onClick={() => setDisclaimerModalOpen(false)} variant="default">
+                            Close
+                        </Button>
+                    )}
+                   
+                </Group>
+            </Stack>
+        </Modal>
     </Container>
   );
 }
