@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
-  const [tier, setTier] = useState(null);
+
   const [risk, setRisk] = useState(null);
   const [essential, setEssential] = useState(null);
   
@@ -33,13 +33,12 @@ function App() {
     return data.filter((item) => {
       const matchesSearch = item.name.toLowerCase().includes(search.toLowerCase()) || 
                             item.storage.toLowerCase().includes(search.toLowerCase());
-      const matchesTier = tier ? item.tier === tier : true;
       const matchesRisk = risk ? item.toxicity === risk : true;
       const matchesEssential = essential ? item.essential === essential : true;
 
-      return matchesSearch && matchesTier && matchesRisk && matchesEssential;
+      return matchesSearch && matchesRisk && matchesEssential;
     });
-  }, [data, search, tier, risk, essential]);
+  }, [data, search, risk, essential]);
 
   const handleRowClick = (nutrient) => {
     setSelectedNutrient(nutrient);
@@ -48,7 +47,6 @@ function App() {
 
   const handleReset = () => {
     setSearch('');
-    setTier(null);
     setRisk(null);
     setEssential(null);
   };
@@ -63,7 +61,6 @@ function App() {
             <Stack>
                 <FilterBar
                     search={search} onSearchChange={setSearch}
-                    tier={tier} onTierChange={setTier}
                     risk={risk} onRiskChange={setRisk}
                     essential={essential} onEssentialChange={setEssential}
                     onReset={handleReset}

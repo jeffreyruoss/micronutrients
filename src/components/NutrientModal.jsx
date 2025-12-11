@@ -1,4 +1,5 @@
 import { Modal, Grid, Text, Badge, Box, Divider, Paper } from '@mantine/core';
+import { NutrientBar } from './NutrientBar';
 
 export function NutrientModal({ nutrient, opened, onClose }) {
   if (!nutrient) return null;
@@ -38,25 +39,28 @@ export function NutrientModal({ nutrient, opened, onClose }) {
         </Grid.Col>
 
         <Grid.Col span={12}>
+             <Paper withBorder p="md" bg="var(--mantine-color-body)">
+                <Text size="xs" c="dimmed" tt="uppercase" fw={700} mb="xs">Intake Range Visual</Text>
+                <Box py="xs">
+                    <NutrientBar rdaStr={nutrient.rda} ulStr={nutrient.ul} />
+                </Box>
+            </Paper>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
             <Divider my="sm" />
         </Grid.Col>
 
-        <Grid.Col span={4}>
+        <Grid.Col span={6}>
             <Text size="sm" fw={500}>Toxicity Risk</Text>
             <Badge color={getToxicityColor(nutrient.toxicity)} mt={4}>
                 {nutrient.toxicity.replace('_', ' ').toUpperCase()}
             </Badge>
         </Grid.Col>
-        <Grid.Col span={4}>
+        <Grid.Col span={6}>
             <Text size="sm" fw={500}>Essentiality</Text>
             <Badge color={getEssentialityColor(nutrient.essential)} variant="light" mt={4}>
                 {nutrient.essential}
-            </Badge>
-        </Grid.Col>
-         <Grid.Col span={4}>
-            <Text size="sm" fw={500}>Tier</Text>
-             <Badge variant="outline" mt={4}>
-                {nutrient.tier.replace(/tier_\d_/, '').toUpperCase()}
             </Badge>
         </Grid.Col>
 

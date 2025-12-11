@@ -3,7 +3,7 @@ import { IconSearch, IconX } from '@tabler/icons-react';
 
 export function FilterBar({ 
     search, onSearchChange,
-    tier, onTierChange,
+
     risk, onRiskChange,
     essential, onEssentialChange,
     onReset
@@ -16,24 +16,11 @@ export function FilterBar({
         value={search}
         onChange={(event) => onSearchChange(event.currentTarget.value)}
         style={{ flex: 1 }}
-        minWidth={200}
+        miw={200}
         label="Search"
       />
       
-      <Select
-        label="Tier"
-        placeholder="Filter by filter"
-        data={[
-          { value: 'tier_1_daily', label: 'Daily (Tier 1)' },
-          { value: 'tier_2_weekly', label: 'Weekly (Tier 2)' },
-          { value: 'tier_3_monthly', label: 'Monthly (Tier 3)' },
-          { value: 'tier_4_quarterly', label: 'Quarterly (Tier 4)' },
-        ]}
-        value={tier}
-        onChange={onTierChange}
-        clearable
-        minWidth={160}
-      />
+
 
       <Select
         label="Toxicity Risk"
@@ -47,7 +34,7 @@ export function FilterBar({
         value={risk}
         onChange={onRiskChange}
         clearable
-        minWidth={150}
+        miw={160}
       />
 
       <Select
@@ -61,7 +48,7 @@ export function FilterBar({
         value={essential}
         onChange={onEssentialChange}
         clearable
-        minWidth={140}
+        miw={140}
       />
 
       <Button variant="light" color="gray" onClick={onReset} leftSection={<IconX size={16} />}>

@@ -8,8 +8,8 @@ export function Header() {
             <Group>
                 <IconSalad size={32} color="var(--mantine-color-teal-6)" />
                 <div>
-                    <Title order={1} size="h3">Micronutrient Tracker</Title>
-                    <Text size="sm" c="dimmed">Daily, Weekly, Monthly, & Quarterly Requirements</Text>
+                    <Title order={1} size="h3">Micronutrients</Title>
+                    <Text size="sm" c="dimmed">Storage Duration, Toxicity, Essentiality</Text>
                 </div>
             </Group>
         </Group>

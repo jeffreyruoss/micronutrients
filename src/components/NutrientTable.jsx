@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Table, ScrollArea, UnstyledButton, Group, Text, Center, Badge } from '@mantine/core';
-import { IconSelector, IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import { IconSelector, IconChevronDown, IconChevronUp, IconInfoCircle } from '@tabler/icons-react';
+import { NutrientBar } from './NutrientBar';
 
 
 // Styling for headers (we will create a css module or just use inline styles for now, prefer module but for speed inline/mantine props)
@@ -41,11 +42,15 @@ export function NutrientTable({ data, onRowClick }) {
       let valueA = a[sortBy];
       let valueB = b[sortBy];
       
-      // Handle tier sorting specifically to respect 1, 2, 3, 4 order
-      if (sortBy === 'tier') {
-          // tier_1_daily -> 1, etc
-          valueA = parseInt(valueA.split('_')[1] || 9);
-          valueB = parseInt(valueB.split('_')[1] || 9);
+      // Parse numbers for RDA and UL
+      if (sortBy === 'rda' || sortBy === 'ul') {
+          const extractNum = (str) => {
+              if (!str) return -1;
+              const match = str.match(/[\d.]+/);
+              return match ? parseFloat(match[0]) : -1;
+          };
+          valueA = extractNum(valueA);
+          valueB = extractNum(valueB);
       }
       
       if (typeof valueA === 'string' && typeof valueB === 'string') {
@@ -81,13 +86,9 @@ export function NutrientTable({ data, onRowClick }) {
   const rows = sortedData.map((row) => (
     <Table.Tr key={row.id} onClick={() => onRowClick(row)} style={{ cursor: 'pointer' }}>
       <Table.Td fw={500}>{row.name}</Table.Td>
-      <Table.Td>
-          <Badge variant="light" color="blue">
-            {row.tier.replace(/tier_(\d)_(\w+)/, (match, p1) => `Tier ${p1}`)}
-          </Badge>
-          <Text size="xs" c="dimmed">{row.tier.split('_').pop()}</Text>
+      <Table.Td style={{ minWidth: 400 }}>
+          <NutrientBar rdaStr={row.rda} ulStr={row.ul} />
       </Table.Td>
-      <Table.Td>{row.rda}</Table.Td>
       <Table.Td>{row.storage}</Table.Td>
       <Table.Td>
         <Badge color={getToxicityColor(row.toxicity)} variant="light">
@@ -98,6 +99,9 @@ export function NutrientTable({ data, onRowClick }) {
          <Badge color={getEssentialityColor(row.essential)} variant="dot">
             {row.essential}
         </Badge>
+      </Table.Td>
+      <Table.Td>
+        <IconInfoCircle size={20} color="gray" style={{ cursor: 'pointer' }} />
       </Table.Td>
     </Table.Tr>
   ));
@@ -115,18 +119,11 @@ export function NutrientTable({ data, onRowClick }) {
               Micronutrient
             </Th>
             <Th
-              sorted={sortBy === 'tier'}
-              reversed={reverseSortDirection}
-              onSort={() => setSorting('tier')}
-            >
-              Tier
-            </Th>
-            <Th
               sorted={sortBy === 'rda'}
               reversed={reverseSortDirection}
               onSort={() => setSorting('rda')}
             >
-              RDA
+              Intake Range (RDA vs UL)
             </Th>
             <Th
               sorted={sortBy === 'storage'}
@@ -149,6 +146,7 @@ export function NutrientTable({ data, onRowClick }) {
             >
               Essentiality
             </Th>
+            <Table.Th />
           </Table.Tr>
         </Table.Thead>
         <Table.Tbody>
