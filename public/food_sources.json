@@ -1,7 +1,7 @@
 {
   "B1": {
-    "vegan": ["Nutritional Yeast", "Sunflower Seeds", "Navy Beans", "Black Beans", "Lentils"],
-    "vegetarian": ["Nutritional Yeast", "Sunflower Seeds", "Navy Beans", "Black Beans", "Lentils"],
+    "vegan": ["Nutritional Yeast", "Sunflower Seeds", "Brown Rice", "Black Beans", "Lentils"],
+    "vegetarian": ["Nutritional Yeast", "Eggs", "Yogurt", "Sunflower Seeds", "Brown Rice"],
     "omnivore": ["Pork Chops", "Trout", "Salmon", "Sunflower Seeds", "Acorn Squash"]
   },
   "B2": {
@@ -130,9 +130,14 @@
     "vegetarian": ["Black-eyed Peas", "Lima Beans", "Lentils", "Yogurt", "Cheese"],
     "omnivore": ["Beef Liver", "Black-eyed Peas", "Lima Beans", "Chicken", "Kidney"]
   },
-  "Fluoride": {
-    "vegan": ["Tea (Black/Green)", "Grapes", "Raisins", "Spinach", "Potatoes"],
-    "vegetarian": ["Tea (Black/Green)", "Grapes", "Raisins", "Potatoes", "Wine"],
-    "omnivore": ["Tea (Black/Green)", "Crab", "Shrimp", "Grapes", "Raisins"]
+  "Choline": {
+    "vegan": ["Soybeans", "Quinoa", "Broccoli", "Wheat Germ", "Brussels Sprouts"],
+    "vegetarian": ["Eggs", "Milk", "Yogurt", "Soybeans", "Quinoa"],
+    "omnivore": ["Beef Liver", "Eggs", "Chicken Breast", "Salmon", "Beef"]
+  },
+  "Chloride": {
+    "vegan": ["Seaweed", "Tomatoes", "Lettuce", "Celery", "Olives"],
+    "vegetarian": ["Seaweed", "Tomatoes", "Lettuce", "Celery", "Olives"],
+    "omnivore": ["Table Salt", "Seaweed", "Tomatoes", "Lettuce", "Celery"]
   }
 }

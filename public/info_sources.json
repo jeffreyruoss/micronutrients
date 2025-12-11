@@ -1,0 +1,9 @@
+{
+    "B1": [
+      { "title": "NIH Office of Dietary Supplements - Thiamin", "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/" },
+      { "title": "Harvard T.H. Chan School of Public Health - Thiamin", "url": "https://www.hsph.harvard.edu/nutritionsource/vitamin-b1/" },
+      { "title": "MedlinePlus - Thiamin", "url": "https://medlineplus.gov/ency/article/002401.htm" },
+      { "title": "Mayo Clinic - Thiamin", "url": "https://www.mayoclinic.org/drugs-supplements-thiamin/art-20361878" },
+      { "title": "Cleveland Clinic - Thiamin", "url": "https://my.clevelandclinic.org/health/drugs/20888-thiamine-vitamin-b1" }
+    ]
+}

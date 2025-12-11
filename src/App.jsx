@@ -10,6 +10,7 @@ import { NutrientModal } from './components/NutrientModal';
 function App() {
   const [data, setData] = useState([]);
   const [foodData, setFoodData] = useState({});
+  const [infoSources, setInfoSources] = useState({});
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
 
@@ -31,11 +32,13 @@ function App() {
   useEffect(() => {
     Promise.all([
       fetch(`${import.meta.env.BASE_URL}db.json`).then(res => res.json()),
-      fetch(`${import.meta.env.BASE_URL}food_sources.json`).then(res => res.json())
+      fetch(`${import.meta.env.BASE_URL}food_sources.json`).then(res => res.json()),
+      fetch(`${import.meta.env.BASE_URL}info_sources.json`).then(res => res.json())
     ])
-      .then(([nutrientData, foodSources]) => {
+      .then(([nutrientData, foodSources, infoSourcesData]) => {
         setData(nutrientData);
         setFoodData(foodSources);
+        setInfoSources(infoSourcesData);
         setLoading(false);
       })
       .catch((err) => {
@@ -174,6 +177,7 @@ function App() {
         <NutrientModal 
             nutrient={selectedNutrient} 
             foodSources={foodData}
+            infoSources={infoSources}
             opened={modalOpened} 
             onClose={() => setModalOpened(false)} 
         />

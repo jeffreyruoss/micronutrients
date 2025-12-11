@@ -3,7 +3,7 @@
     "id": "B1",
     "name": "B1 (Thiamine)",
     "rda": "1.1-1.2 mg",
-    "storage": "9-18 days",
+    "storage": "2-3 weeks",
     "toxicity": "low",
     "essential": "essential"
   },
@@ -225,16 +225,25 @@
     "rda": "45 mcg",
     "storage": "days-weeks",
     "toxicity": "low",
-    "essential": "non-essential",
+    "essential": "essential",
     "ul": "2000 mcg"
   },
   {
-    "id": "Fluoride",
-    "name": "Fluoride (F)",
-    "rda": "3-4 mg",
-    "storage": "years",
+    "id": "Choline",
+    "name": "Choline",
+    "rda": "425-550 mg",
+    "storage": "days-weeks",
+    "toxicity": "high",
+    "essential": "essential",
+    "ul": "3500 mg"
+  },
+  {
+    "id": "Chloride",
+    "name": "Chloride (Cl)",
+    "rda": "2300 mg",
+    "storage": "days-weeks",
     "toxicity": "moderate",
-    "essential": "non-essential",
-    "ul": "10 mg"
+    "essential": "essential",
+    "ul": "3600 mg"
   }
 ]

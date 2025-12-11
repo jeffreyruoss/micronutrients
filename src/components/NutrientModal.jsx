@@ -1,11 +1,12 @@
 import { Modal, Grid, Text, Badge, Box, Divider, Paper, List, Group, ThemeIcon } from '@mantine/core';
-import { IconLeaf, IconMeat, IconCheese, IconInfoCircle } from '@tabler/icons-react';
+import { IconLeaf, IconMeat, IconCheese, IconInfoCircle, IconBook } from '@tabler/icons-react';
 import { NutrientBar } from './NutrientBar';
 
-export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
+export function NutrientModal({ nutrient, foodSources, infoSources, opened, onClose }) {
   if (!nutrient) return null;
 
   const foods = foodSources && foodSources[nutrient.id];
+  const sources = infoSources && infoSources[nutrient.id];
 
   const getToxicityColor = (toxicity) => {
     switch (toxicity) {
@@ -139,6 +140,31 @@ export function NutrientModal({ nutrient, foodSources, opened, onClose }) {
                     </Paper>
                 )}
             </Grid.Col>
+        )}
+
+        {sources && sources.length > 0 && (
+             <Grid.Col span={12}>
+                <Divider my="md" label="Information Sources" labelPosition="center" />
+                <Paper withBorder p="md" bg="gray.0">
+                    <Group mb="sm">
+                        <IconBook size={18} />
+                        <Text fw={700} size="sm">References & Further Reading</Text>
+                    </Group>
+                    <List size="xs" spacing={4}>
+                        {sources.map((source, idx) => (
+                            <List.Item key={idx}>
+                                {source.url ? (
+                                    <Text component="a" href={source.url} target="_blank" c="blue" td="underline">
+                                        {source.title || source.url}
+                                    </Text>
+                                ) : (
+                                    <Text>{source.title || source}</Text>
+                                )}
+                            </List.Item>
+                        ))}
+                    </List>
+                </Paper>
+             </Grid.Col>
         )}
       </Grid>
     </Modal>
